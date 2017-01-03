@@ -1,4 +1,4 @@
-import { downgradeInjectable, downgradeComponent, UpgradeModule } from '@angular/upgrade/static';
+import { downgradeInjectable, downgradeComponent } from '@angular/upgrade/static';
 import { NameParser } from './admin/nameParser.service';
 import { ProfileComponent } from './profile/profile.component'
 

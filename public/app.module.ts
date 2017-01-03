@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { UpgradeModule } from '@angular/upgrade/static';
 import { NameParser } from './admin/nameParser.service';
 import { ProfileComponent } from './profile/profile.component';
+import { NavComponent } from './nav/nav.component';
 
 @NgModule({
   imports: [
@@ -15,7 +16,8 @@ import { ProfileComponent } from './profile/profile.component';
     ProfileComponent
   ],
   declarations: [
-    ProfileComponent
+    ProfileComponent,
+    NavComponent
   ],
   providers: [
     NameParser,
