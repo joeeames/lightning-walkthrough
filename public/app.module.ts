@@ -5,6 +5,7 @@ import { UpgradeModule } from '@angular/upgrade/static';
 import { NameParser } from './admin/nameParser.service';
 import { ProfileComponent } from './profile/profile.component';
 import { NavComponent } from './nav/nav.component';
+import { RouterUpgradeInitializer, setUpLocationSync } from '@angular/router/upgrade';
 
 @NgModule({
   imports: [
@@ -34,7 +35,8 @@ import { NavComponent } from './nav/nav.component';
       provide: 'currentIdentity',
       useFactory: (i: any) => i.get('currentIdentity'),
       deps: ['$injector']
-    }
+    },
+    RouterUpgradeInitializer
   ]
 })
 export class AppModule {
