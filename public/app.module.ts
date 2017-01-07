@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { UpgradeModule } from '@angular/upgrade/static';
 import { NameParser } from './admin/nameParser.service';
 import { ProfileComponent } from './profile/profile.component';
-import { NavComponent } from './nav/nav.component';
+import { NavWrapperComponent } from './nav/nav-wrapper.component';
 import { RouterUpgradeInitializer, setUpLocationSync } from '@angular/router/upgrade';
 
 @NgModule({
@@ -18,7 +18,7 @@ import { RouterUpgradeInitializer, setUpLocationSync } from '@angular/router/upg
   ],
   declarations: [
     ProfileComponent,
-    NavComponent
+    NavWrapperComponent
   ],
   providers: [
     NameParser,
