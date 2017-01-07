@@ -10,5 +10,5 @@ var gulp = require('gulp');
 gulp.task('default', function () {
   return gulp.src('public/**/*.html')
     .pipe(angularTemplateCache())
-    .pipe(gulp.dest('public/tempcache'));
+    .pipe(gulp.dest('public'));
 });
